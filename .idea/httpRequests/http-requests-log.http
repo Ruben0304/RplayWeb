@@ -1,0 +1,165 @@
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T024240.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T023830.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T023458.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T021929.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T020042.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T015354.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T015100.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T014641.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T013824.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T013358.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T013230.400.html
+
+###
+
