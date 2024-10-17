@@ -4,6 +4,7 @@ import urllib.parse
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def home():
     return render_template('confirmed-succed.html')
@@ -63,37 +64,36 @@ def update_password():
     if request.method == 'GET':
         return render_template('confirmar-password.html')
     elif request.method == 'POST':
-     try:
-        data = request.get_json()
-        access_token = data.get('access_token')
-        refresh_token = data.get('refresh_token')
+        try:
+            data = request.get_json()
+            access_token = data.get('access_token')
+            refresh_token = data.get('refresh_token')
 
-        if not access_token or not refresh_token:
-            return {"error": "Tokens no proporcionados"}, 401
+            if not access_token or not refresh_token:
+                return {"error": "Tokens no proporcionados"}, 401
 
-        new_password = data.get('new_password')
-        confirm_password = data.get('confirm_password')
+            new_password = data.get('new_password')
+            confirm_password = data.get('confirm_password')
 
-        # Validaciones de contraseña
-        if not new_password or len(new_password) < 8:
-            return {"error": "La contraseña debe tener al menos 8 caracteres"}, 400
+            # Validaciones de contraseña
+            if not new_password or len(new_password) < 8:
+                return {"error": "La contraseña debe tener al menos 8 caracteres"}, 400
 
-        if new_password != confirm_password:
-            return {"error": "Las contraseñas no coinciden"}, 400
+            if new_password != confirm_password:
+                return {"error": "Las contraseñas no coinciden"}, 400
 
-        # Establecer la sesión en Supabase usando los tokens
-        session_response = supabase.auth.set_session(access_token, refresh_token)
+            # Establecer la sesión en Supabase usando los tokens
+            session_response = supabase.auth.set_session(access_token, refresh_token)
 
-        # Actualizar la contraseña del usuario
-        update_response = supabase.auth.update_user({
-            "password": new_password
-        })
+            # Actualizar la contraseña del usuario
+            update_response = supabase.auth.update_user({
+                "password": new_password
+            })
 
+            return {"message": "Contraseña actualizada exitosamente"}, 200
 
-        return {"message": "Contraseña actualizada exitosamente"}, 200
-
-     except Exception as e:
-        return {"error": f"Error al actualizar contraseña: {str(e)}"}, 400
+        except Exception as e:
+            return {"error": f"Error al actualizar contraseña: {str(e)}"}, 400
 
 
 if __name__ == '__main__':
