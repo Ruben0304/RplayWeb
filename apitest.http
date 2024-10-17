@@ -1,0 +1,6 @@
+POST localhost:5000/request-reset
+Content-Type: application/json
+
+{
+    "email": "hernandzruben9@gmail.com"
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Éxito!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background-color: #16213e;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            animation: pop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        @keyframes pop {
+            0% { transform: scale(0); }
+            80% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff6b35;
+            opacity: 0;
+        }
+        @keyframes confetti-fall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="success-icon">✓</div>
+    <h1>¡Operación Exitosa!</h1>
+    <p>Tu contraseña ha sido restablecida correctamente.</p>
+    <p>Revisa tu correo electrónico para más información.</p>
+</div>
+
+<script>
+    function createConfetti() {
+        const colors = ['#ff6b35', '#4CAF50', '#3498db', '#9b59b6', '#f1c40f'];
+        for (let i = 0; i < 50; i++) {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.animation = `confetti-fall ${Math.random() * 3 + 2}s linear forwards`;
+            document.body.appendChild(confetti);
+        }
+    }
+
+    window.onload = createConfetti;
+</script>
+</body>
+</html>
