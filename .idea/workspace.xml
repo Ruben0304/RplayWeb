@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="219a2464-ffab-4df4-a3c0-d8f4c9b722a6" name="Changes" comment="sass">
+      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +129,7 @@
       <workItem from="1729138946831" duration="6652000" />
       <workItem from="1729189106682" duration="163000" />
       <workItem from="1729189284450" duration="122000" />
+      <workItem from="1729208077778" duration="932000" />
     </task>
     <task id="LOCAL-00001" summary="sass">
       <option name="closed" value="true" />

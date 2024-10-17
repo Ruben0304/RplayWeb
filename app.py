@@ -4,6 +4,11 @@ import urllib.parse
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return render_template('confirmed-succed.html')
+
+
 @app.route('/exito-restablecer-contrasena')
 def exito_restablecer_contrasena():
     return render_template('confirmed-succed.html')
