@@ -28,7 +28,7 @@ def request_reset():
         response = supabase.auth.reset_password_for_email(
             email=email,
             options={
-                "redirect_to": "http://localhost:5000/update-password"
+                "redirect_to": "https://rplay-web.vercel.app/update-password"
             }
         )
         return {"message": "Se ha enviado un correo con instrucciones para restablecer tu contraseña"}, 200
