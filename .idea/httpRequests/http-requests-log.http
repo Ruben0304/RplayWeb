@@ -9,6 +9,21 @@ Accept: */*
     "email": "hernandzruben9@gmail.com"
 }
 
+<> 2024-10-17T232005.200.json
+
+###
+
+POST http://localhost:5000/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
 <> 2024-10-17T024240.200.json
 
 ###
