@@ -54,21 +54,24 @@
             Gestiona tu perfil profesional, participa en torneos élite y conecta con clubes de todo el mundo
         </p>
         <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <a href="#download" class="group relative inline-flex items-center justify-center px-8 py-3 bg-orange-500 hover:bg-orange-600 rounded-lg overflow-hidden transition-all duration-300">
+            <!-- Primer botón con naranja oscuro -->
+            <a href="#download" class="group relative inline-flex items-center justify-center px-8 py-3 bg-orange-700 hover:bg-orange-800 rounded-lg overflow-hidden transition-all duration-300">
                 <div class="absolute inset-0 w-3 bg-white transition-all duration-300 ease-out group-hover:w-full opacity-10"></div>
                 <span class="relative text-lg font-semibold">Comenzar Ahora</span>
             </a>
-            <a href="#features" class="group inline-flex items-center justify-center px-8 py-3 border-2 border-gray-700 hover:border-orange-500 rounded-lg transition-colors">
-                <span class="text-lg font-semibold group-hover:text-orange-500">Ver Características</span>
+            <!-- Segundo botón con borde y hover en naranja oscuro -->
+            <a href="#features" class="group inline-flex items-center justify-center px-8 py-3 border-2 border-gray-700 hover:border-orange-700 rounded-lg transition-colors">
+                <span class="text-lg font-semibold group-hover:text-orange-700">Ver Características</span>
             </a>
         </div>
+
     </div>
 
     <!-- Mockup flotante de la app -->
     <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-lg">
         <div data-aos="fade-up" class="relative">
             <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-            <img src="/api/placeholder/300/600" alt="App Preview" class="w-full rounded-t-3xl shadow-2xl">
+{#            <img src="{{ url_for('static', filename='preview.jpg') }}" alt="App Preview" class="w-full rounded-t-3xl shadow-2xl">#}
         </div>
     </div>
 </header>
@@ -220,7 +223,7 @@
             <div data-aos="fade-up" class="group">
                 <div class="relative bg-gray-800 rounded-2xl overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-                    <img src="/api/placeholder/400/200" alt="Tournament" class="w-full h-48 object-cover">
+{#                    <img src="/api/placeholder/400/200" alt="Tournament" class="w-full h-48 object-cover">#}
                     <div class="relative p-6">
                         <div class="flex items-center justify-between mb-4">
                             <span class="px-3 py-1 bg-orange-500 rounded-full text-sm">En Progreso</span>
@@ -242,7 +245,7 @@
             <div data-aos="fade-up" data-aos-delay="100" class="group">
                 <div class="relative bg-gray-800 rounded-2xl overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-                    <img src="/api/placeholder/400/200" alt="Tournament" class="w-full h-48 object-cover">
+{#                    <img src="/api/placeholder/400/200" alt="Tournament" class="w-full h-48 object-cover">#}
                     <div class="relative p-6">
                         <div class="flex items-center justify-between mb-4">
                             <span class="px-3 py-1 bg-green-500 rounded-full text-sm">Inscripciones</span>
@@ -264,7 +267,7 @@
             <div data-aos="fade-up" data-aos-delay="200" class="group">
                 <div class="relative bg-gray-800 rounded-2xl overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-                    <img src="/api/placeholder/400/200" alt="Tournament" class="w-full h-48 object-cover">
+{#                    <img src="/api/placeholder/400/200" alt="Tournament" class="w-full h-48 object-cover">#}
                     <div class="relative p-6">
                         <div class="flex items-center justify-between mb-4">
                             <span class="px-3 py-1 bg-blue-500 rounded-full text-sm">Próximamente</span>
@@ -296,7 +299,7 @@
             <!-- Player Card Template -->
             <div data-aos="fade-up" class="group relative">
                 <div class="relative bg-gray-800 rounded-2xl overflow-hidden transition-transform group-hover:scale-105">
-                    <img src="/api/placeholder/300/400" alt="Player" class="w-full h-72 object-cover">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202407/lamine-yamal-185925309-3x4.jpg?VersionId=muytiuWdRZ98lRNO8HyM8LA77bwvTzhL" alt="Player" class="w-full h-72 object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <div class="flex items-center space-x-2 mb-2">
@@ -307,7 +310,53 @@
                         <p class="text-gray-400 text-sm mb-3">Delantero • 23 años</p>
                         <div class="flex items-center justify-between">
                             <div class="flex items-center space-x-2">
-                                <img src="/api/placeholder/20/20" alt="Club" class="w-5 h-5 rounded-full">
+                                <img src="https://pngimg.com/uploads/fcb_logo/fcb_logo_PNG10.png" alt="Club" class="w-5 h-5 rounded-full">
+                                <span class="text-sm text-gray-400">FC Barcelona B</span>
+                            </div>
+                            <button class="px-3 py-1 bg-orange-500 rounded-lg text-sm hover:bg-orange-600 transition-colors">
+                                Ver Perfil
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="group relative">
+                <div class="relative bg-gray-800 rounded-2xl overflow-hidden transition-transform group-hover:scale-105">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202407/lamine-yamal-185925309-3x4.jpg?VersionId=muytiuWdRZ98lRNO8HyM8LA77bwvTzhL" alt="Player" class="w-full h-72 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span class="text-sm text-gray-300">Disponible</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-1">Carlos Rodríguez</h3>
+                        <p class="text-gray-400 text-sm mb-3">Delantero • 23 años</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                                                <img src="https://pngimg.com/uploads/fcb_logo/fcb_logo_PNG10.png" alt="Club" class="w-5 h-5 rounded-full">
+                                <span class="text-sm text-gray-400">FC Barcelona B</span>
+                            </div>
+                            <button class="px-3 py-1 bg-orange-500 rounded-lg text-sm hover:bg-orange-600 transition-colors">
+                                Ver Perfil
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="group relative">
+                <div class="relative bg-gray-800 rounded-2xl overflow-hidden transition-transform group-hover:scale-105">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202407/lamine-yamal-185925309-3x4.jpg?VersionId=muytiuWdRZ98lRNO8HyM8LA77bwvTzhL" alt="Player" class="w-full h-72 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span class="text-sm text-gray-300">Disponible</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-1">Carlos Rodríguez</h3>
+                        <p class="text-gray-400 text-sm mb-3">Delantero • 23 años</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://pngimg.com/uploads/fcb_logo/fcb_logo_PNG10.png" alt="Club" class="w-5 h-5 rounded-full">
                                 <span class="text-sm text-gray-400">FC Barcelona B</span>
                             </div>
                             <button class="px-3 py-1 bg-orange-500 rounded-lg text-sm hover:bg-orange-600 transition-colors">
@@ -388,14 +437,14 @@
         <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
             <!-- iOS Download -->
             <div data-aos="fade-right" class="text-center">
-                <img src="/api/placeholder/200/200" alt="QR Code iOS" class="mb-4 rounded-xl shadow-lg">
+{#                <img src="/api/placeholder/200/200" alt="QR Code iOS" class="mb-4 rounded-xl shadow-lg">#}
                 <p class="text-lg font-semibold mb-2">App Store</p>
                 <p class="text-gray-400">Para dispositivos iOS</p>
             </div>
 
             <!-- Android Download -->
             <div data-aos="fade-left" class="text-center">
-                <img src="/api/placeholder/200/200" alt="QR Code Android" class="mb-4 rounded-xl shadow-lg">
+{#                <img src="/api/placeholder/200/200" alt="QR Code Android" class="mb-4 rounded-xl shadow-lg">#}
                 <p class="text-lg font-semibold mb-2">Google Play</p>
                 <p class="text-gray-400">Para dispositivos Android</p>
             </div>
