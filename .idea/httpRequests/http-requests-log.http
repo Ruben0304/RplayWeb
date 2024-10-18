@@ -1,3 +1,49 @@
+POST http://rplay-web.vercel.app/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T232319.200.json
+
+###
+
+POST http://rplay-web.vercel.app/update-password/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T232310.404.html
+
+###
+
+POST https://rplay-web.vercel.app/update-password/request-reset
+Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+    "email": "hernandzruben9@gmail.com"
+}
+
+<> 2024-10-17T232249.404.html
+
+###
+
 POST http://localhost:5000/request-reset
 Content-Type: application/json
 Content-Length: 43

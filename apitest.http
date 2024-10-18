@@ -1,4 +1,4 @@
-POST localhost:5000/request-reset
+POST https://rplay-web.vercel.app/request-reset
 Content-Type: application/json
 
 {
