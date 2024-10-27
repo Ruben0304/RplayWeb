@@ -69,12 +69,37 @@
             line-height: 1.5;
         }
         .footer {
-            background: #f8f8f8;
-            padding: 25px;
             text-align: center;
-            color: #666;
-            font-size: 14px;
+            padding: 30px 20px;
+            background: #f8f9fa;
             border-top: 1px solid #eee;
+        }
+        .copyright {
+            color: #6e6e73;
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+        .address {
+            color: #6e6e73;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+        .links {
+            margin-top: 15px;
+        }
+        .links a {
+            color: #424245;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 10px;
+            transition: color 0.2s ease;
+        }
+        .links a:hover {
+            color: #FF5630;
+        }
+        .divider {
+            color: #d2d2d7;
+            margin: 0 2px;
         }
         .emoji {
             font-size: 24px;
@@ -120,8 +145,17 @@
         </div>
         
         <div class="footer">
-            <p>© 2024 Rplay. Todos los derechos reservados.</p>
-            <small>Si no solicitaste esta cuenta, por favor ignora este correo.</small>
+            <div class="copyright">TM and © 2024 Rplay Inc.</div>
+            <div class="address">La Habana, Cuba.</div>
+            <div class="links">
+                <a href="#">Terms of Service</a>
+                <span class="divider">•</span>
+                <a href="#">Privacy Policy</a>
+                <span class="divider">•</span>
+                <a href="#">Contact Us</a>
+                <span class="divider">•</span>
+                <a href="https://rplay-web.vercel.app/">Go to website</a>
+            </div>
         </div>
     </div>
 </body>
