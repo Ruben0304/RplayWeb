@@ -10,6 +10,10 @@ def home():
     return render_template('index.html')
 
 
+@app.route('/cuenta-aceptada')
+def exito_restablecer_contrasena():
+    return render_template('confirmed-account.html')
+
 @app.route('/exito-restablecer-contrasena')
 def exito_restablecer_contrasena():
     return render_template('confirmed-succed.html')
