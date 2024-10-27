@@ -11,7 +11,7 @@ def home():
 
 
 @app.route('/cuenta-aceptada')
-def exito_restablecer_contrasena():
+def exito_cuenta():
     return render_template('confirmed-account.html')
 
 @app.route('/exito-restablecer-contrasena')
