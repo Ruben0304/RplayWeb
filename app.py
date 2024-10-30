@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, request, render_template, redirect
 from database.Supabase import supabase
 import urllib.parse
@@ -7,12 +9,22 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    screenshots_folder = 'static/screenshots'
+
+    # Lista los archivos en la carpeta y filtra solo los que comienzan con 'c' y terminan en '.jpg'
+
+
+    screenshots = [f for f in os.listdir(screenshots_folder)]
+
+     # Ordena la lista para que los nombres de archivos estén en orden
+    screenshots.sort(key=lambda x: int(x[1:-4]))  # Asumiendo que el formato es 'c
+    return render_template('index.html', screenshots=screenshots)
 
 
 @app.route('/cuenta-aceptada')
 def exito_cuenta():
     return render_template('confirmed-account.html')
+
 
 @app.route('/exito-restablecer-contrasena')
 def exito_restablecer_contrasena():
