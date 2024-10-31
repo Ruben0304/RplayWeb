@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPLAY - Sobre Nosotros</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+<!-- Navbar con efecto de cristal -->
+<nav class="fixed w-full z-50 rounded-lg shadow-2xl transition-all duration-300 ease-in-out hover:shadow-2xl" style="
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  top: 20px;
+  width: 80%;
+  margin-left: 10%;
+">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo y nombre -->
+            <div class="flex items-center space-x-3 relative">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center relative overflow-hidden">
+                    <img src="{{ url_for('static', filename='logo.jpg') }}" alt="logo"
+                         class="w-full h-full object-cover">
+                </div>
+                <span class="text-xl font-bold text-white">RPLAY</span>
+            </div>
+
+            <!-- Links de navegación -->
+            <div class="hidden md:flex space-x-8">
+                <a href="/#features"
+                   class="group flex items-center space-x-2 text-gray-300 hover:text-orange-500 transition-all duration-300 hover:scale-105 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">
+                    <i data-lucide="sparkles"
+                       class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span>Características</span>
+                </a>
+                <a href="#tournaments"
+                   class="group flex items-center space-x-2 text-gray-300 hover:text-orange-500 transition-all duration-300 hover:scale-105 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">
+                    <i data-lucide="trophy" class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span>Torneos</span>
+                </a>
+                <a href="#players"
+                   class="group flex items-center space-x-2 text-gray-300 hover:text-orange-500 transition-all duration-300 hover:scale-105 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">
+                    <i data-lucide="users" class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span>Jugadores</span>
+                </a>
+                <a href="#stats"
+                   class="group flex items-center space-x-2 text-gray-300 hover:text-orange-500 transition-all duration-300 hover:scale-105 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:duration-300">
+                    <i data-lucide="bar-chart-2"
+                       class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span>Estadísticas</span>
+                </a>
+            </div>
+
+            <!-- Botón de descarga -->
+            <div>
+                <a href="#download"
+                   class="relative inline-flex items-center justify-center px-4 py-2 rounded-lg overflow-hidden group transition-all duration-300">
+                    <div class="absolute inset-0 w-0 bg-white transition-all duration-500 ease-out group-hover:w-full opacity-20"></div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                         style="box-shadow: 0 0 20px #EB6343"></div>
+                    <span class="relative text-white transform group-hover:scale-105 transition-transform duration-300 text-sm flex items-center space-x-2">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>Descargar</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido Principal -->
+<div class="container mx-auto px-4 pt-32 pb-16 max-w-4xl">
+    <div class="bg-gray-800 rounded-xl p-8 shadow-2xl space-y-12"
+         style="background: rgba(31, 41, 55, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08);"
+         data-aos="fade-up">
+
+        <!-- Sección: ¿Quiénes somos? -->
+        <section class="space-y-4">
+            <h1 class="text-4xl font-bold text-orange-500">¿Quiénes somos?</h1>
+            <p class="text-gray-300">Somos Rplay, un grupo de jóvenes innovadores con el objetivo de desarrollar y
+                ofrecer un servicio para todas aquellas personas que les gusta y les apasiona el deporte.</p>
+        </section>
+
+        <!-- Sección: ¿Qué ofrecemos? -->
+        <section class="space-y-4">
+            <h2 class="text-3xl font-bold text-orange-500">¿Qué ofrecemos?</h2>
+            <p class="text-gray-300">Ofrecemos una plataforma que reúne todas las características de un sitio de gestión
+                de torneos y eventos de fútbol. Además de brindarles a aquellas personas que lo practican, un espacio
+                para buscar torneos y guarda las estadísticas que va acumulando en cada una de sus participaciones.</p>
+        </section>
+
+        <!-- Sección: Beneficios -->
+        <section class="space-y-8">
+            <h2 class="text-3xl font-bold text-orange-500">Beneficios</h2>
+
+            <!-- Jugador -->
+            <div class="bg-gray-700 rounded-xl p-6 transform hover:scale-[1.02] transition-all duration-300"
+                 data-aos="fade-right">
+                <h3 class="text-2xl font-bold text-white mb-4">Jugador</h3>
+                <div class="space-y-4">
+                    <p class="text-gray-300">Este será capaz de almacenar un historial de datos con diversas
+                        estadísticas de cada jugador como:</p>
+                    <ul class="list-none space-y-2 pl-4">
+                        <li class="flex items-center space-x-2 text-gray-300">
+                            <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                            <span>Goles</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-gray-300">
+                            <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                            <span>Asistencias</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-gray-300">
+                            <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                            <span>Tarjetas Rojas</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-gray-300">
+                            <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                            <span>Tarjetas Amarillas</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-orange-500 mt-4">
+                        <p class="text-gray-300 text-sm">🗒️ Cabe destacar que no todos los torneos suman puntos al
+                            historial, sólo torneos oficiales o verificados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizador -->
+            <div class="bg-gray-700 rounded-xl p-6 transform hover:scale-[1.02] transition-all duration-300"
+                 data-aos="fade-left">
+                <h3 class="text-2xl font-bold text-white mb-4">Organizador</h3>
+                <p class="text-gray-300">Para este rol nuestra plataforma les ofrece un conjunto completo de
+                    herramientas para organizar sus torneos. Puede gestionar partidos y sus resultados, tener un control
+                    total de los equipos participantes. Además, permite tener un historial de los torneos realizados a
+                    lo largo del tiempo.</p>
+            </div>
+
+            <!-- Patrocinador -->
+            <div class="bg-gray-700 rounded-xl p-6 transform hover:scale-[1.02] transition-all duration-300"
+                 data-aos="fade-right">
+                <h3 class="text-2xl font-bold text-white mb-4">Patrocinador</h3>
+                <p class="text-gray-300">La plataforma también es de gran beneficio para los patrocinadores interesados
+                    en apoyar el deporte local. Les permite identificar torneos populares, equipos talentosos y
+                    jugadores destacados para patrocinar.</p>
+            </div>
+        </section>
+
+        <!-- Sección: Nuestra Visión -->
+        <section class="space-y-4">
+            <h2 class="text-3xl font-bold text-orange-500">Nuestra Visión</h2>
+            <p class="text-gray-300">Además de ser un referente para los amantes del fútbol, aspiramos a fomentar una
+                comunidad global de deportistas y aficionados, donde se promueva la sana competencia, el respeto y el
+                amor por el fútbol.</p>
+        </section>
+
+        <!-- Sección: Nuestro Equipo -->
+        <section class="space-y-8">
+            <h2 class="text-3xl font-bold text-orange-500">Nuestro Equipo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Desarrollador Móvil -->
+                <div class="relative group" data-aos="fade-up">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                    <a href="https://github.com/ale24dev" target="_blank"
+                       class="relative block bg-gray-800 p-6 rounded-xl transform transition duration-500 hover:-translate-y-2">
+                        <div class="text-center">
+                            <!-- Imagen Circular -->
+                            <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                                <img src="https://avatars.githubusercontent.com/u/111847126?v=4" alt="Alejandro Rodríguez Díaz" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 flex items-center justify-center">
+                                <i data-lucide="smartphone" class="w-5 h-5 text-white mr-2"></i> Alejandro Rodríguez Díaz
+                            </h3>
+                            <p class="text-gray-400 mb-4">Desarrollador Móvil</p>
+                            <div class="flex justify-center">
+                        <span class="text-blue-500 hover:text-blue-400 flex items-center">
+                            <i data-lucide="github" class="w-5 h-5 mr-2"></i> ale24dev
+                        </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desarrollador Web -->
+                <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                    <a href="https://github.com/Ruben0304" target="_blank"
+                       class="relative block bg-gray-800 p-6 rounded-xl transform transition duration-500 hover:-translate-y-2">
+                        <div class="text-center">
+                            <!-- Imagen Circular -->
+                            <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                                <img src="https://avatars.githubusercontent.com/u/98282371?v=4" alt="Rubén Hernández Acevedo" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 flex items-center justify-center">
+                                <i data-lucide="code" class="w-5 h-5 text-white mr-2"></i> Rubén Hernández Acevedo
+                            </h3>
+                            <p class="text-gray-400 mb-4">Desarrollador Web</p>
+                            <div class="flex justify-center">
+                        <span class="text-blue-500 hover:text-blue-400 flex items-center">
+                            <i data-lucide="github" class="w-5 h-5 mr-2"></i> Ruben0304
+                        </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Community Manager -->
+                <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                    <a href="https://www.facebook.com/andy.cabrera.528316" target="_blank"
+                       class="relative block bg-gray-800 p-6 rounded-xl transform transition duration-500 hover:-translate-y-2">
+                        <div class="text-center">
+                            <!-- Imagen Circular -->
+                            <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                                <img src="https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/441082192_1182844439752833_5257541817965719591_n.jpg?stp=dst-jpg_s100x100&_nc_cat=100&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=zMaAe9CIn7EQ7kNvgHY4wpV&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=AHrVubRzCSeUJwjjDi2FjSY&oh=00_AYBBhx5ptcFP5VU19l3LDhkWfeSSMWswKEBZRcjWv2bsqw&oe=6728E65A" alt="Andy Cabrera Gámez" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 flex items-center justify-center">
+                                <i data-lucide="message-circle" class="w-5 h-5 text-white mr-2"></i> Andy Cabrera Gámez
+                            </h3>
+                            <p class="text-gray-400 mb-4">Community Manager</p>
+                            <div class="flex justify-center">
+                        <span class="text-green-500 hover:text-green-400 flex items-center">
+                            <i data-lucide="facebook" class="w-5 h-5 mr-2"></i> Andy Cabrera
+                        </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Sección: Preguntas Frecuentes -->
+        <section class="container mx-auto px-4 py-16 max-w-4xl space-y-8" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-orange-500">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-white">¿Es gratuito el uso de la plataforma?</h3>
+                    <p class="text-gray-300">Sí, la plataforma es gratuita para los jugadores. Los organizadores pueden
+                        optar por el paquete premium para obtener características adicionales.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-white">¿Cómo puedo unirme a un torneo?</h3>
+                    <p class="text-gray-300">Una vez registrado, puedes crear un equipo, añadir jugadores y buscar
+                        torneos disponibles para unirte.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-white">¿Cómo puedo crear un torneo?</h3>
+                    <p class="text-gray-300">Como organizador, tendrás la opción de crear un nuevo torneo en tu panel de
+                        control.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-white">¿Cómo se verifican los resultados de los partidos?</h3>
+                    <p class="text-gray-300">Los organizadores ingresan los resultados y nuestra plataforma los
+                        verifica.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-white">¿Puedo invitar a amigos a unirse a la plataforma?</h3>
+                    <p class="text-gray-300">Sí, puedes invitar a cuantos amigos desees a participar en torneos
+                        juntos.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-white">¿Cómo puedo ponerme en contacto con el soporte?</h3>
+                    <p class="text-gray-300">Puedes contactarnos a través del formulario en la sección de soporte de la
+                        aplicación o en nuestra web.</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-gray-900 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl font-bold">R</span>
+                    </div>
+                    <span class="text-xl font-bold">RPLAY</span>
+                </div>
+                <p class="text-gray-400">
+                    Tu plataforma profesional de fútbol
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Producto</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#features" class="hover:text-orange-500 transition-colors">Características</a></li>
+                    <li><a href="#tournaments" class="hover:text-orange-500 transition-colors">Torneos</a></li>
+                    <li><a href="#players" class="hover:text-orange-500 transition-colors">Jugadores</a></li>
+                    <li><a href="#stats" class="hover:text-orange-500 transition-colors">Estadísticas</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Empresa</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="/sobre-nosotros" class="hover:text-orange-500 transition-colors">Sobre Nosotros</a></li>
+                    <li><a href="#" class="hover:text-orange-500 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="/terminos" class="hover:text-orange-500 transition-colors">Términos y Condiciones</a></li>
+                    <li><a href="/politica-privacidad" class="hover:text-orange-500 transition-colors">Política de Privacidad</a></li>
+                    {#                    <li><a href="#" class="hover:text-orange-500 transition-colors">Cookies</a></li>#}
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-400 mb-4 md:mb-0">
+                © 2024 RPLAY. Todos los derechos reservados.
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

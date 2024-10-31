@@ -12,8 +12,6 @@ def home():
     screenshots_folder = 'static/screenshots'
 
     # Lista los archivos en la carpeta y filtra solo los que comienzan con 'c' y terminan en '.jpg'
-
-
     screenshots = [f for f in os.listdir(screenshots_folder)]
 
      # Ordena la lista para que los nombres de archivos estén en orden
@@ -21,6 +19,15 @@ def home():
     return render_template('index.html', screenshots=screenshots)
 
 
+@app.route('/sobre-nosotros')
+def sobre_nosotros():
+    return render_template('about-us.html')
+@app.route('/politica-privacidad')
+def politica():
+    return render_template('privacy-policy.html')
+@app.route('/terminos')
+def terminos():
+    return render_template('terms-conditions.html')
 @app.route('/cuenta-aceptada')
 def exito_cuenta():
     return render_template('confirmed-account.html')
